@@ -528,6 +528,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <p style="margin: 10px 0; font-size: 1.1rem;">ჯამური ქულა: <strong>${totalScore} / 40</strong> — <span style="background:${badgeClass}; color:#fff; padding:3px 10px; border-radius:12px;">${gradeLevel}</span></p>
             <p><strong>განმავითარებელი კომენტარი:</strong> მოსწავლემ/ჯგუფმა გამოავლინა ისტ ინსტრუმენტების ფუნქციური გამოყენების უნარი, განსაკუთრებული ყურადღება დაუთმო ინკლუზიურ ხელმისაწვდომობას და წარმატებით წარადგინა რესურსი 3 დეკემბრის ღონისძიებისთვის.</p>
         `;
-    });
+    });      
 
 });

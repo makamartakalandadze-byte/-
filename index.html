@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>არ დაიჯერო, რომ შენ მარტო ხარ! - ინკლუზიური ტექნოლოგიების პორტალი</title>
+    <meta name="description" content="მე-6 კლასელების ინკლუზიური საგანმანათლებლო პროექტი - ისტ და ტექნოლოგიები სპეციალური საჭიროების მქონე ბავშვების მხარდასაჭერად.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+GO:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+
+    <!-- Accessibility Bar -->
+    <aside class="a11y-bar" aria-label="ხელმისაწვდომობის მართვა">
+        <div class="container a11y-flex">
+            <span class="a11y-title"><i class="fa-solid fa-universal-access"></i> ინკლუზიური ხელმისაწვდომობა:</span>
+            <div class="a11y-controls">
+                <button id="btn-font-dec" class="a11y-btn" title="შრიფტის შემცირება">A-</button>
+                <button id="btn-font-reset" class="a11y-btn" title="სტანდარტული შრიფტი">A</button>
+                <button id="btn-font-inc" class="a11y-btn" title="შრიფტის გაზრდა">A+</button>
+                <button id="btn-contrast" class="a11y-btn" title="მაღალი კონტრასტი"><i class="fa-solid fa-circle-half-stroke"></i> კონტრასტი</button>
+                <button id="btn-tts" class="a11y-btn sound-btn" title="გვერდის წაკითხვა"><i class="fa-solid fa-volume-high"></i> ხმოვანი წაკითხვა</button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <div class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                <div class="logo-text">
+                    <h1>არ დაიჯერო, რომ შენ მარტო ხარ!</h1>
+                    <p class="subtitle">ინკლუზიური საგანმანათლებლო პროექტი • VI კლასი</p>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="#overview" class="nav-link active"><i class="fa-solid fa-compass"></i> მიმოხილვა</a>
+                <a href="#groups" class="nav-link"><i class="fa-solid fa-users"></i> ჯგუფები</a>
+                <a href="#prompts" class="nav-link"><i class="fa-solid fa-wand-magic-sparkles"></i> AI პრომპტები</a>
+                <a href="#games" class="nav-link"><i class="fa-solid fa-gamepad"></i> თამაშები</a>
+                <a href="#ebook" class="nav-link"><i class="fa-solid fa-book-open-reader"></i> ელ-წიგნი</a>
+                <a href="#rubric" class="nav-link"><i class="fa-solid fa-clipboard-check"></i> შეფასება</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero-section">
+        <div class="hero-backdrop"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i class="fa-solid fa-calendar-check"></i> 3 დეკემბერი — შეზღუდული შესაძლებლობების მქონე პირთა საერთაშორისო დღე
+            </div>
+            <h2>ტექნოლოგიები თანაბარი შესაძლებლობებისთვის</h2>
+            <p>მე-6 კლასელები სწავლობენ ისტ-ს (Paint, Word, PowerPoint, Scratch, BookCreator, AI), რათა შექმნან საგანმანათლებლო თამაშები, ანიმაციები და ელექტრონული წიგნები სპეციალური საჭიროების მქონე თანატოლებისთვის.</p>
+            <div class="hero-meta">
+                <span><i class="fa-solid fa-user-tie"></i> <strong>ფასილიტატორი:</strong> მაკა კალანდაძე</span>
+                <span><i class="fa-solid fa-envelope"></i> makamartakalandadze@gmail.com</span>
+                <span><i class="fa-brands fa-github"></i> <a href="https://github.com/makamartakalandadze-byte/" target="_blank" style="color: #60a5fa; text-decoration: underline;">GitHub პროფილი</a></span>
+                <span><i class="fa-solid fa-clock"></i> <strong>ხანგრძლივობა:</strong> 1 თვე (დეკემბერი 2025)</span>
+            </div>
+            <div class="hero-actions">
+                <a href="#games" class="btn btn-primary"><i class="fa-solid fa-play"></i> სცადეთ თამაშები</a>
+                <a href="#prompts" class="btn btn-secondary"><i class="fa-solid fa-copy"></i> AI პრომპტების ბაზა</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container main-layout">
+
+        <!-- 1. Overview Section -->
+        <section id="overview" class="content-section active-section">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-bullseye text-gradient"></i> პროექტის მიმოხილვა & ამოცანები</h2>
+                <p>ინტერნეტის ფუნქციური გამოყენება და ცოდნის ტრანსფერი ინკლუზიურ გარემოში</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card card-warning">
+                    <div class="card-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3>პრობლემის განსაზღვრა</h3>
+                    <ul>
+                        <li>ინტერნეტის არამიზნობრივი გამოყენება მოსწავლეებში.</li>
+                        <li>5-6 კლასის ეროვნული სასწავლო გეგმით შესწავლილი პროგრამების (Paint, Word, PowerPoint, Internet, Scratch, BookCreator) უფუნქციობა პრაქტიკაში.</li>
+                    </ul>
+                </div>
+
+                <div class="card card-success">
+                    <div class="card-icon"><i class="fa-solid fa-crosshairs"></i></div>
+                    <h3>პროექტის მიზანი</h3>
+                    <ul>
+                        <li>ინტერნეტის სულ სხვა კუთხით დანახვა და მისი ფუნქციური გამოყენება.</li>
+                        <li>შესწავლილი პროგრამებით შექმნილი რესურსებით სპეციალური საჭიროების მქონე ბავშვების დახმარება.</li>
+                    </ul>
+                </div>
+
+                <div class="card card-info">
+                    <div class="card-icon"><i class="fa-solid fa-list-check"></i></div>
+                    <h3>პროექტის ამოცანები</h3>
+                    <ul>
+                        <li>აქტუალური რესურსების მოძიება და კვლევის ჩატარება.</li>
+                        <li>საინფორმაციო ბროშურების, ელ-წიგნების და საგანმანათლებლო თამაშების შექმნა.</li>
+                        <li>ანიმაციის შექმნა და გაახმოვანება AI ინსტრუმენტებით.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ESG Standards & Outcomes -->
+            <div class="esg-box margin-top-lg">
+                <h3><i class="fa-solid fa-graduation-cap"></i> ეროვნულ სასწავლო გეგმასთან კავშირი (ესგ შედეგები)</h3>
+                <div class="esg-grid">
+                    <div class="esg-item">
+                        <span class="esg-tag">ის ტექნ. VI.1</span>
+                        <p>სხვადასხვა სახის ციფრული საშუალების შერჩევა და გამოყენება ციფრული მასალის შექმნისას.</p>
+                    </div>
+                    <div class="esg-item">
+                        <span class="esg-tag">ის ტექნ. VI.2</span>
+                        <p>ისტ-ის ეფექტიანად გამოყენება ინფორმაციის მიღების, შენახვისა და ორგანიზების დროს.</p>
+                    </div>
+                    <div class="esg-item">
+                        <span class="esg-tag">ის ტექნ. VI.3</span>
+                        <p>ინფორმაციის მოძიება და კვლევის პროცესში ციფრული ინსტრუმენტების გამოყენება.</p>
+                    </div>
+                    <div class="esg-item">
+                        <span class="esg-tag">ის ტექნ. VI.4</span>
+                        <p>ციფრული საშუალებების გამოყენება კომუნიკაციისა და თანამშრომლობისათვის.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline activities -->
+            <div class="timeline-box margin-top-lg">
+                <h3><i class="fa-solid fa-timeline"></i> პროექტის განხორციელების 5-ეტაპიანი გეგმა</h3>
+                <div class="timeline-steps">
+                    <div class="step-card">
+                        <div class="step-num">1</div>
+                        <h4>ინფორმაციის მოძიება</h4>
+                        <p>ინტერნეტის რესურსების (ფოსტა, სოც. ქსელები, თამაშები) კვლევა (1 გაკვეთილი).</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">2</div>
+                        <h4>მასალის წარმოდგენა</h4>
+                        <p>ჯგუფების მიერ დამუშავებული მასალის პრეზენტაცია (1 გაკვეთილი).</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">3</div>
+                        <h4>დახვეწა & შენიშვნები</h4>
+                        <p>მასწავლებლის რეკომენდაციების გათვალისწინება (1 გაკვეთილი).</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">4</div>
+                        <h4>რესურსების შექმნა</h4>
+                        <p>Paint, Word, PowerPoint, Scratch, BookCreator-ის გამოყენება (1 კვირა).</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-num">5</div>
+                        <h4>ფინალური პრეზენტაცია</h4>
+                        <p>რესურსების გაზიარება თანატოლებისა და სპეც-მასწავლებლებისთვის (1 გაკვეთილი).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Groups Section -->
+        <section id="groups" class="content-section">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-users-gear text-gradient"></i> მოსწავლეთა სამუშაო ჯგუფები</h2>
+                <p>4 სპეციალიზებული ჯგუფი და მათ მიერ შექმნილი ინპუტები</p>
+            </div>
+
+            <div class="groups-grid">
+                <!-- Group 1 -->
+                <div class="group-card">
+                    <div class="group-header group-color-1">
+                        <span class="group-badge">I ჯგუფი</span>
+                        <h3>საინფორმაციო ბროშურები & მეხსიერების სავარჯიშო</h3>
+                    </div>
+                    <div class="group-body">
+                        <p><strong>პროდუქტი:</strong> ბროშურები ინკლუზიურ ცნობიერებაზე და მეხსიერების განმავითარებელი ბარათები.</p>
+                        <div class="group-tools">
+                            <span><i class="fa-solid fa-file-word"></i> MS Word</span>
+                            <span><i class="fa-solid fa-paintbrush"></i> Paint</span>
+                        </div>
+                        <button class="btn btn-outline launch-game-btn" data-game="memory"><i class="fa-solid fa-gamepad"></i> ითამაშეთ "მეხსიერება"</button>
+                    </div>
+                </div>
+
+                <!-- Group 2 -->
+                <div class="group-card">
+                    <div class="group-header group-color-2">
+                        <span class="group-badge">II ჯგუფი</span>
+                        <h3>ელექტრონული წიგნი & ანიმაცია</h3>
+                    </div>
+                    <div class="group-body">
+                        <p><strong>პროდუქტი:</strong> "საბას ჯადოსნური ეკრანი" — AI ილუსტრირებული და გაახმოვანებული ზღაპარი.</p>
+                        <div class="group-tools">
+                            <span><i class="fa-solid fa-book"></i> BookCreator</span>
+                            <span><i class="fa-solid fa-robot"></i> AI Image & Audio</span>
+                        </div>
+                        <button class="btn btn-outline open-ebook-btn"><i class="fa-solid fa-book-open"></i> გადაშალეთ წიგნი</button>
+                    </div>
+                </div>
+
+                <!-- Group 3 -->
+                <div class="group-card">
+                    <div class="group-header group-color-3">
+                        <span class="group-badge">III ჯგუფი</span>
+                        <h3>ინტერაქციული თამაში "ლაბირინთი"</h3>
+                    </div>
+                    <div class="group-body">
+                        <p><strong>პროდუქტი:</strong> მოტორიკისა და ყურადღების განმავითარებელი თამაში ლაბირინთში.</p>
+                        <div class="group-tools">
+                            <span><i class="fa-solid fa-code"></i> Scratch</span>
+                            <span><i class="fa-solid fa-file-powerpoint"></i> PowerPoint</span>
+                        </div>
+                        <button class="btn btn-outline launch-game-btn" data-game="maze"><i class="fa-solid fa-gamepad"></i> ითამაშეთ "ლაბირინთი"</button>
+                    </div>
+                </div>
+
+                <!-- Group 4 -->
+                <div class="group-card">
+                    <div class="group-header group-color-4">
+                        <span class="group-badge">IV ჯგუფი</span>
+                        <h3>კომპიუტერული თამაში - კითხვარი</h3>
+                    </div>
+                    <div class="group-body">
+                        <p><strong>პროდუქტი:</strong> შემეცნებითი ვიქტორინა ინკლუზიის, ეტიკეტისა და ტექნოლოგიების შესახებ.</p>
+                        <div class="group-tools">
+                            <span><i class="fa-solid fa-code"></i> Scratch</span>
+                            <span><i class="fa-solid fa-clipboard-question"></i> Interative Quiz</span>
+                        </div>
+                        <button class="btn btn-outline launch-game-btn" data-game="quiz"><i class="fa-solid fa-gamepad"></i> ითამაშეთ "კითხვარი"</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. AI Prompts Library -->
+        <section id="prompts" class="content-section">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-wand-magic-sparkles text-gradient"></i> ხელოვნური ინტელექტის (AI) პრომპტების ბიბლიოთეკა</h2>
+                <p>მოსწავლეებისა და მასწავლებლებისთვის განკუთვნილი მზა პრომპტები</p>
+            </div>
+
+            <div class="prompt-category-tabs">
+                <button class="tab-btn active" data-tab="ai-img"><i class="fa-solid fa-image"></i> AI ილუსტრაციები</button>
+                <button class="tab-btn" data-tab="ai-story"><i class="fa-solid fa-feather-pointed"></i> ზღაპრის ტექსტი</button>
+                <button class="tab-btn" data-tab="ai-scratch"><i class="fa-solid fa-laptop-code"></i> Scratch ლოგიკა</button>
+                <button class="tab-btn" data-tab="ai-brochure"><i class="fa-solid fa-newspaper"></i> ბროშურის შაბლონები</button>
+            </div>
+
+            <div class="prompt-tab-contents">
+
+                <!-- Tab 1: Image Prompts -->
+                <div id="ai-img" class="prompt-tab-content active-tab">
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span><i class="fa-solid fa-sparkles"></i> ილუსტრაცია 1: საბას ჯადოსნური ეკრანი (BookCreator)</span>
+                            <button class="copy-btn" data-copy="A friendly 11-year-old boy named Saba with a bright smile discovering a glowing, magical digital tablet screen in a colorful classroom, whimsical children book illustration, soft lighting, vibrant pastel colors, HD --ar 16:9"><i class="fa-solid fa-copy"></i> კოპირება</button>
+                        </div>
+                        <pre>A friendly 11-year-old boy named Saba with a bright smile discovering a glowing, magical digital tablet screen in a colorful classroom, whimsical children book illustration, soft lighting, vibrant pastel colors, HD --ar 16:9</pre>
+                    </div>
+
+                    <div class="prompt-box margin-top-md">
+                        <div class="prompt-header">
+                            <span><i class="fa-solid fa-sparkles"></i> ილუსტრაცია 2: ინკლუზიური მეგობრობა</span>
+                            <button class="copy-btn" data-copy="Diverse school children, including a child in a wheelchair and a child with headphones, playing interactive educational games together, happy atmosphere, vector art style for kids e-book --ar 16:9"><i class="fa-solid fa-copy"></i> კოპირება</button>
+                        </div>
+                        <pre>Diverse school children, including a child in a wheelchair and a child with headphones, playing interactive educational games together, happy atmosphere, vector art style for kids e-book --ar 16:9</pre>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Story Prompts -->
+                <div id="ai-story" class="prompt-tab-content">
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span><i class="fa-solid fa-robot"></i> ChatGPT პრომპტი: ზღაპრის სცენარი "საბას ჯადოსნური ეკრანი"</span>
+                            <button class="copy-btn" data-copy="შენ ხარ საბავშვო მწერალი და ინკლუზიური განათლების ექსპერტი. დაწერე 100-სიტყვიანი მოკლე, ემპათიური და შთამაგონებელი ზღაპარი მე-6 კლასელებისთვის თემაზე 'საბას ჯადოსნური ეკრანი'. ზღაპარში 11 წლის საბა აღმოაჩენს, რომ კომპიუტერი მხოლოდ თამაშისთვის კი არა, სპეციალური საჭიროების მქონე მეგობრების დასახმარებლად და მათთან საურთიერთოდ არის საუკეთესო ინსტრუმენტი. ენობრივი სტილი იყოს მარტივი, სითბოთი სავსე და ბავშვებისთვის გასაგები."><i class="fa-solid fa-copy"></i> კოპირება</button>
+                        </div>
+                        <pre>შენ ხარ საბავშვო მწერალი და ინკლუზიური განათლების ექსპერტი. დაწერე 100-სიტყვიანი მოკლე, ემპათიური და შთამაგონებელი ზღაპარი მე-6 კლასელებისთვის თემაზე 'საბას ჯადოსნური ეკრანი'. ზღაპარში 11 წლის საბა აღმოაჩენს, რომ კომპიუტერი მხოლოდ თამაშისთვის კი არა, სპეციალური საჭიროების მქონე მეგობრების დასახმარებლად და მათთან საურთიერთოდ არის საუკეთესო ინსტრუმენტი. ენობრივი სტილი იყოს მარტივი, სითბოთი სავსე და ბავშვებისთვის გასაგები.</pre>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Scratch Prompts -->
+                <div id="ai-scratch" class="prompt-tab-content">
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span><i class="fa-solid fa-code"></i> Scratch კოდის გენერირების პრომპტი (ChatGPT/Claude)</span>
+                            <button class="copy-btn" data-copy="მომეცი Scratch 3.0-ის ნაბიჯ-ნაბიჯ ინსტრუქცია და კოდის ბლოკები მე-6 კლასისთვის: როგორ ავაგოთ თამაში 'ლაბირინთი', სადაც პერსონაჟი მოძრაობს ისრებით, კედელთან შეხებისას უკან ბრუნდება, ხოლო ფინიშზე გასვლისას გამოდის მილოცვა და ჟღერს გამარჯვების ხმა."><i class="fa-solid fa-copy"></i> კოპირება</button>
+                        </div>
+                        <pre>მომეცი Scratch 3.0-ის ნაბიჯ-ნაბიჯ ინსტრუქცია და კოდის ბლოკები მე-6 კლასისთვის: როგორ ავაგოთ თამაში 'ლაბირინთი', სადაც პერსონაჟი მოძრაობს ისრებით, კედელთან შეხებისას უკან ბრუნდება, ხოლო ფინიშზე გასვლისას გამოდის მილოცვა და ჟღერს გამარჯვების ხმა.</pre>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Brochure Prompts -->
+                <div id="ai-brochure" class="prompt-tab-content">
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span><i class="fa-solid fa-file-pen"></i> პრომპტი 3 დეკემბრის ბროშურისთვის</span>
+                            <button class="copy-btn" data-copy="შექმენი მოკლე საინფორმაციო ბროშურის ტექსტი 3 დეკემბრისთვის - შეზღუდული შესაძლებლობის მქონე პირთა საერთაშორისო დღისთვის. ტექსტმა მე-6 კლასელებს უნდა აუხსნას: 1) რას ნიშნავს თანაბარი შესაძლებლობები, 2) როგორ გამოვიყენოთ ტექნოლოგიები სსსმ თანატოლების მხარდასაჭერად, 3) 3 ოქროს წესი სწორი და ემპათიური კომუნიკაციისთვის."><i class="fa-solid fa-copy"></i> კოპირება</button>
+                        </div>
+                        <pre>შექმენი მოკლე საინფორმაციო ბროშურის ტექსტი 3 დეკემბრისთვის - შეზღუდული შესაძლებლობის მქონე პირთა საერთაშორისო დღისთვის. ტექსტმა მე-6 კლასელებს უნდა აუხსნას: 1) რას ნიშნავს თანაბარი შესაძლებლობები, 2) როგორ გამოვიყენოთ ტექნოლოგიები სსსმ თანატოლების მხარდასაჭერად, 3) 3 ოქროს წესი სწორი და ემპათიური კომუნიკაციისთვის.</pre>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. Interactive Games Hub -->
+        <section id="games" class="content-section">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-gamepad text-gradient"></i> ინტერაქციული თამაშების სიმულატორი</h2>
+                <p>მოსწავლეთა მიერ შექმნილი საგანმანათლებლო თამაშების ონლაინ ვერსიები</p>
+            </div>
+
+            <div class="game-selector-bar">
+                <button class="game-tab-btn active" data-gametab="memory"><i class="fa-solid fa-puzzle-piece"></i> 1. მეხსიერების სავარჯიშო</button>
+                <button class="game-tab-btn" data-gametab="maze"><i class="fa-solid fa-map-signs"></i> 2. თამაში "ლაბირინთი"</button>
+                <button class="game-tab-btn" data-gametab="quiz"><i class="fa-solid fa-circle-question"></i> 3. კითხვარი / ვიქტორინა</button>
+            </div>
+
+            <!-- Game Container 1: Memory Game -->
+            <div id="game-memory" class="game-window active-game">
+                <div class="game-info-bar">
+                    <span><i class="fa-solid fa-brain"></i> იპოვეთ წყვილები (ინკლუზიური სიმბოლოები)</span>
+                    <span id="memory-score">სვლა: 0 | წყვილი: 0/4</span>
+                    <button id="reset-memory-btn" class="btn btn-sm btn-outline"><i class="fa-solid fa-rotate-right"></i> თავიდან</button>
+                </div>
+                <div class="memory-grid" id="memory-grid">
+                    <!-- Cards injected by JS -->
+                </div>
+            </div>
+
+            <!-- Game Container 2: Labyrinth Game -->
+            <div id="game-maze" class="game-window">
+                <div class="game-info-bar">
+                    <span><i class="fa-solid fa-arrows-up-down-left-right"></i> მიიყვანეთ პერსონაჟი ⭐️ ვარსკვლავამდე (ისრებით ან ღილაკებით)</span>
+                    <span id="maze-status">სტატუსი: ითამაშეთ!</span>
+                    <button id="reset-maze-btn" class="btn btn-sm btn-outline"><i class="fa-solid fa-rotate-right"></i> თავიდან</button>
+                </div>
+                <div class="maze-container">
+                    <canvas id="mazeCanvas" width="400" height="400"></canvas>
+                    <div class="maze-controls">
+                        <button class="maze-btn" id="m-up"><i class="fa-solid fa-arrow-up"></i></button>
+                        <div class="maze-btn-row">
+                            <button class="maze-btn" id="m-left"><i class="fa-solid fa-arrow-left"></i></button>
+                            <button class="maze-btn" id="m-down"><i class="fa-solid fa-arrow-down"></i></button>
+                            <button class="maze-btn" id="m-right"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Container 3: Quiz Game -->
+            <div id="game-quiz" class="game-window">
+                <div class="game-info-bar">
+                    <span><i class="fa-solid fa-lightbulb"></i> ინკლუზიური ვიქტორინა "თანაბარი შესაძლებლობები"</span>
+                    <span id="quiz-score">ქულა: 0</span>
+                </div>
+                <div class="quiz-box" id="quiz-box">
+                    <h3 id="quiz-question">კითხვა იტვირთება...</h3>
+                    <div class="quiz-options" id="quiz-options">
+                        <!-- Options injected by JS -->
+                    </div>
+                    <div id="quiz-feedback" class="quiz-feedback"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Interactive E-Book Section -->
+        <section id="ebook" class="content-section">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-book-open-reader text-gradient"></i> ელექტრონული წიგნი "საბას ჯადოსნური ეკრანი"</h2>
+                <p>BookCreator-ის ფორმატის ინკლუზიური ზღაპარი ხმოვანი გაჟღერებით</p>
+            </div>
+
+            <div class="ebook-container">
+                <div class="ebook-page">
+                    <div class="ebook-media">
+                        <img id="ebook-img" src="saba_magic_screen.jpg" alt="საბას ჯადოსნური ეკრანი">
+                    </div>
+                    <div class="ebook-text-area">
+                        <div class="ebook-page-num" id="ebook-page-num">გვერდი 1 / 3</div>
+                        <h3 id="ebook-title">1. საბა აღმოაჩენს ციფრულ სამყაროს</h3>
+                        <p id="ebook-text">ერთ ჩვეულებრივ დღეს, 11 წლის საბამ საკლასო ოთახში მბზინავი ციფრული ტაბლეტი იპოვა. მანამდე საბას ეგონა, რომ კომპიუტერი მხოლოდ გასართობი თამაშებისთვის არსებობდა, თუმცა ეკრანზე უცნაური, ჯადოსნური ღილაკი გამოჩნდა...</p>
+                        
+                        <div class="ebook-controls">
+                            <button id="btn-read-page" class="btn btn-primary"><i class="fa-solid fa-volume-high"></i> გვერდის მოსმენა</button>
+                            <div class="ebook-nav-btns">
+                                <button id="btn-prev-page" class="btn btn-outline" disabled><i class="fa-solid fa-chevron-left"></i> წინა</button>
+                                <button id="btn-next-page" class="btn btn-outline">შემდეგი <i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Teacher Assessment Rubric Section -->
+        <section id="rubric" class="content-section">
+            <div class="section-header">
+                <h2><i class="fa-solid fa-clipboard-check text-gradient"></i> შეფასებისა და თვითშეფასების კალკულატორი</h2>
+                <p>ეროვნული სასწავლო გეგმის (ესგ) სტანდარტებზე დაფუძნებული შეფასების ინსტრუმენტი</p>
+            </div>
+
+            <div class="rubric-calculator-card">
+                <h3><i class="fa-solid fa-calculator"></i> მოსწავლის / ჯგუფის შეფასება</h3>
+                
+                <div class="rubric-form">
+                    <div class="form-group">
+                        <label for="student-name"><i class="fa-solid fa-user"></i> მოსწავლის ან ჯგუფის დასახელება:</label>
+                        <input type="text" id="student-name" placeholder="მაგ: I ჯგუფი - საინფორმაციო ბროშურები">
+                    </div>
+
+                    <div class="rubric-criterias">
+                        <div class="rubric-row">
+                            <label>1. ისტ ინსტრუმენტების ფლობა (Paint, Word, Scratch, BookCreator)</label>
+                            <select id="crit-1">
+                                <option value="3">დაბალი (1-4 ქულა) — უჭირს პროგრამების გამოყენება</option>
+                                <option value="7" selected>საშუალო (5-7 ქულა) — იყენებს ინსტრუქციით</option>
+                                <option value="10">მაღალი (8-10 ქულა) — შემოქმედებითად იყენებს</option>
+                            </select>
+                        </div>
+
+                        <div class="rubric-row">
+                            <label>2. ინკლუზიურობა, ადაპტაცია და ემპათია სსსმ პირთა მიმართ</label>
+                            <select id="crit-2">
+                                <option value="3">დაბალი — ემპათია სუსტად არის გამოხატული</option>
+                                <option value="7">საშუალო — ითვალისწინებს ძირითად საჭიროებებს</option>
+                                <option value="10" selected>მაღალი — რესურსი სრულად ადაპტირებულია</option>
+                            </select>
+                        </div>
+
+                        <div class="rubric-row">
+                            <label>3. ჯგუფური თანამშრომლობა და როლების გადანაწილება</label>
+                            <select id="crit-3">
+                                <option value="3">დაბალი — ნაკლები ჩართულობა</option>
+                                <option value="7" selected>საშუალო — აქტიური თანამშრომლობა</option>
+                                <option value="10">მაღალი — ლიდერული თვისებები და ურთიერთდახმარება</option>
+                            </select>
+                        </div>
+
+                        <div class="rubric-row">
+                            <label>4. პრეზენტაციის უნარი და აუდიტორიასთან კომუნიკაცია</label>
+                            <select id="crit-4">
+                                <option value="3">დაბალი — უჭირს ნამუშევრის წარდგენა</option>
+                                <option value="7" selected>საშუალო — გამართული პრეზენტაცია</option>
+                                <option value="10">მაღალი — დამაჯერებელი და შთამაგონებელი გამოსვლა</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button id="calc-rubric-btn" class="btn btn-primary margin-top-md"><i class="fa-solid fa-chart-line"></i> ქულის გამოთვლა & დასკვნა</button>
+                </div>
+
+                <div id="rubric-result" class="rubric-result-box hidden">
+                    <!-- Results injected by JS -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <p><strong>"არ დაიჯერო, რომ შენ მარტო ხარ!"</strong> — ინკლუზიური საგანმანათლებლო პროექტი (2025)</p>
+            <p>პროექტის ფასილიტატორი: მაკა კალანდაძე (makamartakalandadze@gmail.com) | <a href="https://github.com/makamartakalandadze-byte/" target="_blank" style="color: #38bdf8;"><i class="fa-brands fa-github"></i> GitHub: makamartakalandadze-byte</a></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
